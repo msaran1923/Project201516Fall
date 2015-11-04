@@ -1,0 +1,6 @@
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\twitter_proje.csprojResolveAssemblyReference.cache
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\twitter_proje.Form1.resources
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.Properties.Resources.resources
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\twitter_proje.csproj.GenerateResource.Cache
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.exe
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.pdb

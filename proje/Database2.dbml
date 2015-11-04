@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="twitterdb" Class="Database2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PC;Initial Catalog=twitterdb;Integrated Security=True" SettingsObjectName="proje.Properties.Settings" SettingsPropertyName="twitterdbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.admin" Member="admins">
+    <Type Name="admin">
+      <Column Name="admin_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="admin_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="User_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Soyad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DogumTarihi" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Cinsiyet" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefon" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kurum_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Kurum_User" Member="Kurum" ThisKey="Kurum_id" OtherKey="Kurum_id" Type="Kurum" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.hashtag" Member="hashtags">
+    <Type Name="hashtag">
+      <Column Name="hashtag_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hashtag_name" Type="System.String" DbType="NVarChar(140)" CanBeNull="true" />
+      <Association Name="hashtag_tweet" Member="tweets" ThisKey="hashtag_id" OtherKey="hashtag_id" Type="tweet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.kategoriler" Member="kategorilers">
+    <Type Name="kategoriler">
+      <Column Name="Kategori_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UstK_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kategori_ismi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Onay" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="kategoriler_tweet" Member="tweets" ThisKey="Kategori_id" OtherKey="kategori_id" Type="tweet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kurum" Member="Kurums">
+    <Type Name="Kurum">
+      <Column Name="Kurum_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kurum_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Kurum_User" Member="Users" ThisKey="Kurum_id" OtherKey="Kurum_id" Type="User" />
+      <Association Name="Kurum_tweet" Member="tweets" ThisKey="Kurum_id" OtherKey="kurum_id" Type="tweet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tweet" Member="tweets">
+    <Type Name="tweet">
+      <Column Name="tweet_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="kategori_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="text" Type="System.String" DbType="NVarChar(140)" CanBeNull="true" />
+      <Column Name="hashtag_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mod_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="location" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="image_url" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="kurum_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="hashtag_tweet" Member="hashtag" ThisKey="hashtag_id" OtherKey="hashtag_id" Type="hashtag" IsForeignKey="true" />
+      <Association Name="kategoriler_tweet" Member="kategoriler" ThisKey="kategori_id" OtherKey="Kategori_id" Type="kategoriler" IsForeignKey="true" />
+      <Association Name="Kurum_tweet" Member="Kurum" ThisKey="kurum_id" OtherKey="Kurum_id" Type="Kurum" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

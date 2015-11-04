@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="Database2">
+  <DataContextMoniker Name="/Database2DataContext" />
+  <nestedChildShapes>
+    <classShape Id="f5154ae8-846f-4df0-ba19-dfc62c1b628b" absoluteBounds="6.75, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/Database2DataContext/admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="761b77ba-9090-4b78-b253-53c665d885d2" absoluteBounds="6.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed17711f-7508-44ce-a588-2c9528e53a58" absoluteBounds="3.5, 3.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/Database2DataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59e55424-e3bf-4543-921f-cee56a910271" absoluteBounds="3.515, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79b69369-62bd-49f5-b059-a19e518c4ae6" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/Database2DataContext/hashtag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f096afb-e72a-4fac-9803-bfc224f14119" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04d6e00d-c444-4f1d-98a4-ff0ab69e6c29" absoluteBounds="3.75, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Database2DataContext/kategoriler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30294787-c13e-4346-8e55-cbaa6b8f98cf" absoluteBounds="3.765, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="262a3b33-e120-4eb4-9ea7-79a1d74abecd" absoluteBounds="0.75, 3.875, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/Database2DataContext/Kurum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5b383a3-a9c1-4df8-996d-2a137e1b50b4" absoluteBounds="0.765, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="426d6f14-ca13-4e18-ab29-1019bd3a5b2d" absoluteBounds="6.5, 3.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/Database2DataContext/tweet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54d436ca-8cc3-4994-a27b-c2e446f5b142" absoluteBounds="6.515, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.47199625651042); (3.5 : 4.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Database2DataContext/Kurum/Kurum_User" />
+      <nodes>
+        <classShapeMoniker Id="262a3b33-e120-4eb4-9ea7-79a1d74abecd" />
+        <classShapeMoniker Id="ed17711f-7508-44ce-a588-2c9528e53a58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 0.96875); (6.59375 : 0.96875); (6.59375 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Database2DataContext/hashtag/hashtag_tweet" />
+      <nodes>
+        <classShapeMoniker Id="79b69369-62bd-49f5-b059-a19e518c4ae6" />
+        <classShapeMoniker Id="426d6f14-ca13-4e18-ab29-1019bd3a5b2d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 7.53929768880208); (7.5 : 7.53929768880208); (7.5 : 5.7901025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Database2DataContext/kategoriler/kategoriler_tweet" />
+      <nodes>
+        <classShapeMoniker Id="04d6e00d-c444-4f1d-98a4-ff0ab69e6c29" />
+        <classShapeMoniker Id="426d6f14-ca13-4e18-ab29-1019bd3a5b2d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.06899251302083); (3.125 : 5.44399251302083); (3.125 : 6.1651025390625); (6.125 : 6.1651025390625); (6.5 : 5.7901025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Database2DataContext/Kurum/Kurum_tweet" />
+      <nodes>
+        <classShapeMoniker Id="262a3b33-e120-4eb4-9ea7-79a1d74abecd" />
+        <classShapeMoniker Id="426d6f14-ca13-4e18-ab29-1019bd3a5b2d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
