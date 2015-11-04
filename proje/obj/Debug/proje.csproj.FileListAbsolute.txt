@@ -1,0 +1,32 @@
+c:\users\toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\proje.exe.config
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.Form1.resources
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.Properties.Resources.resources
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\proje.exe
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\proje.pdb
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\System.Net.Http.dll
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\TweetSharp.dll
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\System.Net.Http.xml
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\bin\Debug\TweetSharp.pdb
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.exe
+C:\Users\Toshiba\documents\visual studio 2015\Projects\proje\proje\obj\Debug\proje.pdb
+C:\Users\Toshiba\Desktop\proje\bin\Debug\proje.exe.config
+C:\Users\Toshiba\Desktop\proje\bin\Debug\proje.exe
+C:\Users\Toshiba\Desktop\proje\bin\Debug\proje.pdb
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.Form1.resources
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.Properties.Resources.resources
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.exe
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.pdb
+C:\Users\Toshiba\Desktop\proje\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Toshiba\Desktop\proje\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Toshiba\Desktop\proje\bin\Debug\EntityFramework.dll
+C:\Users\Toshiba\Desktop\proje\bin\Debug\System.Net.Http.dll
+C:\Users\Toshiba\Desktop\proje\bin\Debug\EntityFramework.xml
+C:\Users\Toshiba\Desktop\proje\bin\Debug\System.Net.Http.xml
+C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.csprojResolveAssemblyReference.cache
