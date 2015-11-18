@@ -30,3 +30,8 @@ C:\Users\Toshiba\Desktop\proje\bin\Debug\System.Net.Http.dll
 C:\Users\Toshiba\Desktop\proje\bin\Debug\EntityFramework.xml
 C:\Users\Toshiba\Desktop\proje\bin\Debug\System.Net.Http.xml
 C:\Users\Toshiba\Desktop\proje\obj\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\Naz\Documents\Project201516Fall\proje\bin\Debug\proje.exe.config
+C:\Users\Naz\Documents\Project201516Fall\proje\obj\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\Naz\Documents\Project201516Fall\proje\obj\Debug\proje.Form1.resources
+C:\Users\Naz\Documents\Project201516Fall\proje\obj\Debug\proje.Properties.Resources.resources
+C:\Users\Naz\Documents\Project201516Fall\proje\obj\Debug\proje.csproj.GenerateResource.Cache
